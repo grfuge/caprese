@@ -1,0 +1,34 @@
+$screenHeightSmall: 480px;
+$screenWidthSmall: 568px;
+$screenWidthMedium: 768px;
+$screenWidthLarge: 900px;
+$screenWidthFull: 1200px;
+@mixin screenSmall {
+  @media screen and (min-width: $screenWidthSmall) and (min-height: $screenHeightSmall) {
+    @content;
+  }
+}
+
+@mixin screenMedium {
+  @media screen and (min-width: $screenWidthMedium) and (min-height: $screenHeightSmall) {
+    @content;
+  }
+}
+
+@mixin screenLarge {
+  @media screen and (min-width: $screenWidthLarge) and (min-height: $screenHeightSmall) {
+    @content;
+  }
+}
+
+@mixin screenFull {
+  @media screen and (min-width: $screenWidthFull) and (min-height: $screenHeightSmall) {
+    @content;
+  }
+}
+
+@mixin ie {
+  @media screen\0 {
+    @content;
+  }
+}

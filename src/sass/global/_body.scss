@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+  margin-top: 96px;
+  @include screenSmall {
+    margin-top: 48px;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+h1,
+h2 {
+  font-family: "MS Serif", "New York", serif;
+  font-weight: normal;
+}
+
+p {
+  font-family: "Slabo", serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+mark {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+td {
+  font-family: "Slabo", serif;
+  font-size: 1.2em;
+  padding-right: 16px;
+  p {
+    font-size: 1em;
+  }
+}

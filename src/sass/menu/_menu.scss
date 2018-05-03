@@ -1,0 +1,59 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  &--warning {
+    font-style: italic;
+    padding: 64px 16px;
+    @include screenSmall {
+      padding: 64px;
+    }
+  }
+  &--column {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    @include screenMedium {
+      width: 50%;
+    }
+    &--section {
+      padding-top: 56px;
+      margin: 0 16px;
+      h2 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+      table {
+        border-spacing: 0;
+        box-sizing: border-box;
+        tr {
+          &:first-of-type {
+            td {
+              padding: 16px 0 8px 0;
+              &:first-of-type {
+                width: 80%;
+                font-family: "MS Serif", "New York", serif;
+              }
+              &:last-of-type {
+                width: 20%;
+                font-size: 1.1em;
+                text-align: right;
+                @include screenSmall {
+                  text-align: left;
+                }
+              }
+            }
+          }
+          &:last-of-type {
+            td {
+              box-sizing: border-box;
+              padding-right: 16px;
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

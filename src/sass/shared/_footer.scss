@@ -1,0 +1,29 @@
+.footer {
+  height: 192px;
+  background: #f3f3f3;
+  color: #000;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  &--container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &--social {
+      padding: 12px 0;
+      display: flex;
+      a {
+        margin: 0 8px;
+        img {
+          display: block;
+          height: auto;
+          width: 28px;
+        }
+      }
+    }
+    &--copyright {
+      padding: 12px 0;
+    }
+  }
+}

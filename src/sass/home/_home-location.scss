@@ -1,0 +1,31 @@
+.home-location {
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+  @include screenMedium {
+    flex-wrap: nowrap;
+    padding: 96px 0;
+  }
+  &--location {
+    @include screenMedium {
+      box-sizing: border-box;
+      padding-right: 64px;
+    }
+    strong {
+      font-family: "MS Serif", "New York", serif;
+    }
+  }
+  &--map {
+    margin-top: 48px;
+    height: 384px;
+    width: 100%;
+    background: #ccc;
+    @include screenMedium {
+      margin-top: 0;
+      width: 50%;
+    }
+  }
+}

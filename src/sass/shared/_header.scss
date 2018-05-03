@@ -1,0 +1,57 @@
+.navmenu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  z-index: 2000;
+  @include screenSmall {
+    height: 48px;
+  }
+  height: 96px;
+  a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 48px;
+    margin: 0 0;
+    @include screenMedium {
+      margin: 0 8px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &--container {
+    height: 100%;
+    &--logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      a {
+        z-index: 1000;
+        position: relative;
+      }
+      @include screenSmall {
+        display: block;
+        a {
+          position: absolute;
+        }
+      }
+    }
+    &--items {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      text-align: center;
+      @include screenSmall {
+        display: flex;
+        justify-content: center;
+      }
+      a {
+        padding: 0 8px;
+      }
+    }
+  }
+}

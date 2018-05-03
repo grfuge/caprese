@@ -1,0 +1,12 @@
+@mixin line {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 288px;
+    height: 1px;
+    bottom: 0;
+    left: calc(50% - 144px);
+    background: #ddd;
+  }
+}

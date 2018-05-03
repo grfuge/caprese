@@ -1,0 +1,60 @@
+.home-reviews {
+  @include line;
+  &--container {
+    overflow: visible !important;
+    padding: 48px 0;
+    max-width: 600px;
+    @include screenSmall {
+      padding: 80px 0;
+    }
+  }
+}
+
+.reviews {
+  height: 336px;
+  @include screenSmall {
+    height: 224px;
+  }
+  &--arrows {
+    box-sizing: border-box;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    img {
+      display: inline-block;
+      margin: 0 8px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .review {
+    opacity: 1;
+    display: none;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    transition: opacity 200ms;
+    &__active {
+      display: block;
+    }
+    p {
+      position: relative;
+      box-sizing: border-box;
+      padding: 0 1rem;
+      span {
+        font-family: "MS Serif", "New York", serif;
+        font-size: 2.5em;
+        position: absolute;
+        &:first-of-type {
+          left: 0;
+          top: -0.5rem;
+        }
+        &:last-of-type {
+          right: 0;
+          bottom: -0.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.about-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  @include screenMedium {
+    flex-direction: row;
+  }
+  @include line;
+  &_2 {
+    padding-top: 0;
+    padding-bottom: 32px;
+    &:after {
+      display: none;
+    }
+  }
+  &--img {
+    img {
+      width: 100%;
+    }
+  }
+  &--text {
+    box-sizing: border-box;
+    padding: 0 16px;
+    text-align: center;
+    @include screenMedium {
+      width: 50%;
+      text-align: left;
+    }
+  }
+}

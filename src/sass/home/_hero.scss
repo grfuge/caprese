@@ -1,0 +1,44 @@
+.hero {
+  /* Hero Container*/
+  height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+  @include screenLarge {
+    text-align: left;
+    flex-wrap: nowrap;
+  }
+  @include line;
+  /* Text */
+  &--text {
+    width: 100%;
+    box-sizing: border-box;
+    height: 33.33%;
+    padding: 0 16px;
+    @include screenSmall {
+      padding: 0;
+      max-width: 416px;
+    }
+    @include screenMedium {
+      max-width: 480px;
+      height: auto;
+    }
+  }
+  /* Image */
+  &--img {
+    width: 100%;
+    height: 66.66%;
+    background: url("../img/home/hero.jpg") no-repeat;
+    background-size: contain;
+    background-position: center center;
+    display: inline-block;
+    @include screenLarge {
+      height: 100%;
+      max-width: 512px;
+      background-position: 100% center;
+    }
+  }
+}

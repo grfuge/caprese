@@ -1,0 +1,53 @@
+.about-end {
+  height: 768px;
+  background: url("../img/about/about-end.jpg");
+  background-position: center center;
+  background-size: cover;
+  @include screenSmall {
+    height: 704px;
+  }
+  &--container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    flex-direction: column;
+    @include screenLarge {
+      flex-direction: row;
+    }
+    &:after {
+      content: "";
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      @include screenLarge {
+        width: calc(100% - 64px);
+        height: 50%;
+        top: 25%;
+        left: 32px;
+      }
+      @include screenFull {
+        width: 100%;
+        left: 0;
+      }
+    }
+    &--text {
+      max-width: 480px;
+      z-index: 1000;
+      color: #fff;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 0 24px;
+      mark {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

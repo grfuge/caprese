@@ -1,0 +1,50 @@
+.home-menu {
+  height: 896px;
+  background: url("../img/home/home-menu.jpg") no-repeat;
+  background-position: 100% 100%;
+  position: relative;
+  @include screenSmall {
+    height: 832px;
+  }
+  @include screenMedium {
+    height: 704px;
+  }
+  @include screenLarge {
+    height: 604px;
+  }
+  @include screenFull {
+    height: 512px;
+  }
+  &--container {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-top: 48px;
+    @include screenMedium {
+      flex-wrap: nowrap;
+    }
+    @include screenLarge {
+      align-items: flex;
+    }
+    &--text {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 16px;
+      @include screenSmall {
+        max-width: 416px;
+      }
+      @include screenMedium {
+        max-width: 320px;
+        padding: 0 16px;
+      }
+    }
+  }
+  &--link {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+}

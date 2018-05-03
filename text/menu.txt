@@ -1,0 +1,64 @@
+Appetizers
+  Feta cheese pie
+  Moussaka
+  Roasted olives
+
+Desserts
+  Frozen greek yogurt
+  Lemon olive oil cake
+  Baklava
+  Honey pistachio tarts
+
+Beverages
+  Sparkling water
+  Tea
+  Iced tea
+  Coffee
+
+Pizza
+  Margherita
+  Vegetariana
+  Fradiavola
+  Arugula and artichoke
+  Tomato mozzarella
+
+Breakfast
+  Vegetable omelet
+  Goat cheese frittata
+  Shakshouka
+  Zucchini Strata
+  Egg white scramble
+  Berry bulgur yogurt
+
+Sides
+  Saffron rice
+  Steamed vegetables
+  Baba Ghanoush
+  Rice pilaf
+  Pita bread
+
+Soups
+  Halibut stew
+  Tuscan vegetable soup
+  Shrimp orzo soup
+
+Salads
+  Greek Salad
+  Chicken feta salad
+  Lemon fennel salad
+
+Entrees
+  Basil Shrimp pasta
+  Lamb kofta
+  Almond pesto rigatoni
+  Seared scallop
+  Tomato pesto pasta
+  Lamp chops
+
+Wraps & Sandwiches
+  Chicken Souvlaki
+  Garlic lamb pita
+  Lemon chicken schwarma
+  Chicken salad pitas
+  Lamb lettuce wraps
+  Vegetable panini
